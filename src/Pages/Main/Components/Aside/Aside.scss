@@ -1,0 +1,122 @@
+.position-fixed {
+  width: 293px;
+  margin-left: 30px;
+
+  .etc-info {
+    position: fixed;
+    width: 293px;
+    border-radius: 3px;
+
+    .my-info {
+      display: flex;
+      margin: 18px 0 10px 0;
+
+      .my-info-img {
+        width: 55px;
+        height: 55px;
+        margin: 0 12px 5px 0;
+        border-radius: 70%;
+        cursor: pointer;
+      }
+
+      .username-wrapper {
+
+        .nickname {
+          margin: 0px;
+          font-size: 14px;
+          font-weight: bold;
+          color: #262626;
+        }
+
+        .username {
+          margin: 0px;
+          font-size: 14px;
+          color: #8E8E8E;
+        }
+      }
+    }
+
+    .recommend {
+
+      .recommend-text {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .recommend-left {
+          margin: 0px;
+          font-size: 14px;
+          font-weight: bold;
+          color: #8E8E8E;
+
+        }
+
+        .recommend-right {
+          font-size: 12px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+
+      .recommend-list {
+        padding: 0px;
+        list-style: none;
+
+        li {
+          margin-top: 20px;
+
+
+          .recommend-user {
+            display: flex;
+            align-items: center;
+
+            .recommend-user-img {
+              width: 32px;
+              height: 32px;
+              margin-right: 16px;
+              border-radius: 70%;
+              border: 0.5px solid rgba(0, 0, 0, 0.2);
+              cursor: pointer;
+
+            }
+
+            .username-wrapper {
+              width: 210px;
+
+              .username {
+                margin: 0;
+                font-size: 14px;
+                font-weight: bold;
+              }
+
+              .status {
+                margin: 0;
+                font-size: 12px;
+                color: #8E8E8E;
+
+              }
+            }
+
+
+            .following {
+              margin: 0px;
+              font-size: 12px;
+              font-weight: bold;
+              color: #0095F6;
+            }
+
+          }
+        }
+      }
+    }
+
+    .recommend-footer {
+      .footer-font {
+        font-size: 11px;
+        line-height: 13px;
+        color: #C7C7C7;
+      }
+    }
+
+  }
+}

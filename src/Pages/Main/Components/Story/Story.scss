@@ -1,0 +1,58 @@
+.stories {
+	width: 615px;
+	height: 120px;
+	margin-bottom: 25px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	background-color: #fff;
+
+	.stories-list {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0px;
+		list-style: none;
+		overflow: hidden;
+
+		li {
+			width: 64px;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			margin: 0px 20px;
+
+			.img-wrapper {
+				.border-color {
+					position: relative;
+					margin-bottom: 5px;
+					width: 64px;
+					height: 64px;
+					border-radius: 70%;
+					background: linear-gradient(225deg, #dd2a7b 40%, #f58529 80%, #feda77);
+
+					.img {
+						position: absolute;
+						top: 50%;
+						bottom: 50%;
+						right: 50%;
+						left: 50%;
+						width: 55px;
+						height: 55px;
+						margin-bottom: 5px;
+						border-radius: 70%;
+						border: 2px solid white;
+						background-color: white;
+						transform: translate3d(-50%, -50%, 0);
+					}
+
+				}
+			}
+
+			span {
+				font-size: 12px;
+				color: #262626;
+			}
+		}
+	}
+
+}
