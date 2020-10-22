@@ -1,0 +1,183 @@
+$lightgrey :#dbdbdb;
+$drakwhite : #fafafa;
+
+@mixin set-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login {
+	@include set-center;
+	height: 100vh;
+	margin-top: 42px;
+
+	.img-form-wrapper {
+		display: flex;
+		justify-content: center;
+
+		.img-wrapper {
+			.iphone-img {
+				width: 390px;
+				height: 620px;
+				margin-right: 20px;
+			}
+		}
+
+		.login-wrapper {
+			height: 770px;
+
+			.login-container {
+				width: 350px;
+				height: 380px;
+				margin-bottom: 10px;
+				padding: 10px 0 10px 0;
+				border: 1px solid $lightgrey;
+
+				.logo-wrapper {
+					@include set-center;
+
+					.instagram-img {
+						margin: 22px auto 12px;
+					}
+				}
+
+				.login-form {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					margin-top: 24px;
+
+					input {
+						width: 260px;
+						height: 20px;
+						margin: 0 40px 6px;
+						padding: 9px 0 7px 10px;
+						background-color: $drakwhite;
+						border: 1px solid $lightgrey;
+						border-radius: 3px;
+						font-size: 12px;
+
+					}
+
+					.login-btn {
+						width: 270px;
+						height: 30px;
+						margin: 8px 40px;
+						color: $drakwhite;
+						background-color: rgba(0, 149, 246, .3);
+						border: 1px solid transparent;
+						border-radius: 3px;
+						font-size: 14px;
+						font-weight: 600;
+						text-decoration: none solid rgb(38, 38, 38);
+						line-height: 18px;
+
+					}
+
+					.line-or-line-wrapper {
+						display: flex;
+						align-items: center;
+						width: 270px;
+						margin: 10px 40px 18px;
+
+						.or {
+							width: 70px;
+							margin: 0 18px;
+							color: #8E8E8E;
+							font-size: 13px;
+							font-weight: 600;
+
+						}
+
+						.line {
+							position: relative;
+							width: 100%;
+							height: 1px;
+							border-top: 1px solid $lightgrey;
+						}
+					}
+
+					.fb-login-wrapper {
+						width: 270px;
+						border: 0px;
+						background-color: white;
+
+						.fb-icon {
+							width: 14px;
+							height: 14px;
+							margin-right: 8px;
+						}
+
+						.fb-login-text {
+							color: #385185;
+							font-size: 14px;
+							font-weight: 600;
+
+						}
+					}
+
+					.forget-pw {
+						width: 270px;
+						margin: 12px;
+						color: #00376b;
+						font-size: 12px;
+						text-align: center;
+						line-height: 14px;
+
+					}
+				}
+			}
+
+			.signup-container {
+				display: flex;
+				justify-content: center;
+				width: 350px;
+				margin: 0px 0 10px;
+				padding: 10px 0;
+				border: 1px solid $lightgrey;
+
+				.signup-text-normal {
+					font-size: 14px;
+					font-weight: 300;
+				}
+
+				.signup-text-bold {
+					color: #0095F6;
+					font-size: 14px;
+					font-weight: 600;
+
+				}
+			}
+
+			.down-app-container {
+				width: 350px;
+
+				.down-app-text {
+					margin: 20px 20px;
+					color: #262626;
+					font-size: 14px;
+					text-align: center;
+				}
+
+				.down-app-wrapper {
+					display: flex;
+					justify-content: center;
+					margin: 10px 0 10px 0;
+
+					.down-at-and {
+						width: 135px;
+						height: 40px;
+						margin-right: 8px;
+					}
+
+					.down-at-ios {
+						width: 135px;
+						height: 40px;
+						margin-right: 8px;
+					}
+				}
+			}
+		}
+	}
+}
