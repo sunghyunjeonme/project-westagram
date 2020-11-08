@@ -1,0 +1,181 @@
+.feed {
+	width: 615px;
+	margin-bottom: 60px;
+	border: 1px solid #dbdbdb;
+	border-radius: 3px;
+
+	.feed-header {
+		padding: 15px;
+		border-bottom: 1px solid #dbdbdb;
+
+		.posting-user {
+			display: flex;
+			align-items: center;
+			position: relative;
+
+			.user-img {
+				width: 32px;
+				height: 32px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+
+			.userinfo-wrapper {
+				margin-left: 14px;
+
+				.username {
+					margin: 0px;
+					font-size: 14px;
+					font-weight: bold;
+					line-height: 18px;
+					color: #262626;
+				}
+
+				.location {
+					margin: 0px;
+					font-size: 12px;
+					line-height: 15px;
+					color: #262626;
+				}
+			}
+
+			svg {
+				position: absolute;
+				right: 0px;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.feed-img-wrapper {
+		max-width: 615px;
+		max-height: 770px;
+	}
+
+	.feed-img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.comments-icon {
+		.icon-wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding-right: 16px;
+			padding-left: 16px;
+			height: 40px;
+
+			.comments-btn-wrapper {
+				*:focus {
+					outline: none;
+				}
+
+				.comments-btn {
+					padding: 0;
+					padding-right: 16px;
+
+
+					.heart-btn-on {
+						fill: #ed4956;
+					}
+
+					.heart-btn-off {
+						fill: #262626;
+					}
+				}
+			}
+		}
+	}
+
+	.comments-count {
+		padding: 0 16px;
+
+		.cmts-bold {
+			display: inline-block;
+			margin: 0px;
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		.cmts-regular {
+			font-size: 14px;
+			display: inline-block;
+			margin: 0px;
+		}
+	}
+
+	.comments-regular {
+		display: flex;
+		position: relative;
+		align-items: center;
+		padding: 0 16px;
+
+		.content-bold {
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		.content-regular {
+			font-size: 14px;
+		}
+
+		.close-btn {
+			position: absolute;
+			left: 570px;
+			width: 12px;
+		}
+
+		.content-hashtag {
+			font-size: 14px;
+			color: #01476a;
+		}
+	}
+
+	.view-more-comments {
+		display: block;
+		padding: 0 16px;
+		border: 0;
+		font-size: 14px;
+		color: #8e8e8e;
+		background: 0;
+	}
+
+	.time-ago {
+		display: block;
+		height: 20px;
+		margin-bottom: 4px;
+		padding: 0 16px;
+		font-size: 10px;
+		color: #8e8e8e;
+	}
+
+	.post-comments {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 55px;
+		padding: 0 16px;
+		border-top: 1px solid #efefef;
+
+		.input-comments {
+			background: none;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		.submit {
+			font-weight: bold;
+			color: #0095f6;
+			opacity: 0.3;
+			border: none;
+			cursor: pointer;
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+}
